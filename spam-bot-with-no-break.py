@@ -8,14 +8,16 @@ while time !=3:
     time +=1
     print("3 sekundy przerwy przed zaczeciem spamu")
     time.sleep(1)
-# def of spam() thing
-def spam(wiadomosc,ilosc):
+def spam(msg,maxmsg):
     licznik=0
-    while licznik !=ilosc:
+    while licznik !=maxmsg:
         licznik +=1
         print("message has been wroted for" str(licznik) + "st time")
-        pyautogui.write(wiadomosc)
+        pyautogui.write(msg)
         pyautogui.press("enter")
+        # break thing
+        if count == 5 or count == 5*2 or count == 5*3:
+            sleep(4)
 
 spam("example",20)
 
